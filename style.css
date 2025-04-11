@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+:root {
+  --bg: #ffceff;
+  --darkbg: #ffb4ff;
+}
+
+* { user-select: none; }
+[select] { user-select: all; }
+
+html {
+  font: 1.3rem "Alata", sans-serif;
+  background: url("https://i.imgur.com/KlmIqR6.png");
+  background-repeat: repeat-x;
+  animation: BG 50s linear infinite;
+}
+
+@keyframes BG {
+  from { background-position: 0 0; }
+  to { background-position: -1000px 0; }
+}
+
+/* index.html */
+
+#selfpromo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+#maincontent { text-align: center; }
+#introduction { font-size: 1.5rem; }
+
+.projdiv {
+  margin: auto;
+  background: var(--darkbg);
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 7px;
+  width: 80vh;
+} .projdiv button {
+  color: black;
+  background: white;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  font: 1rem "Alata", sans-serif;
+  transition-duration: 0.3s;
+  box-shadow: 5px 5px black;
+} .projdiv button:active {
+  box-shadow: 0px 0px;
+  transform: translateY(5px);
+}
+
+/* index.html */
